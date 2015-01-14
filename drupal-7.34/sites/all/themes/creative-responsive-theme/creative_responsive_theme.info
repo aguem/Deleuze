@@ -1,0 +1,41 @@
+name = Creative Responsive Theme
+description = Creative theme is a responsive theme its perfect for all sorts of corporate and small business websites: for support <b>zymphonies@gmail.com www.freebiezz.com www.zymphonies.com</b>
+core = 7.x
+
+engine = phptemplate
+stylesheets[all][] = style.css
+stylesheets[all][] = media.css
+scripts[] = js/custom.js
+
+regions[slideshow]      = Slideshow
+regions[sidebar_first]  = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[top_first]      = First top
+regions[top_second]     = Second top
+regions[top_third]      = Third top
+regions[content]        = Content
+regions[footer_first]   = First Bottom
+regions[footer_second]  = Second Bottom
+regions[footer_third]   = Third Bottom
+regions[footer]         = Footer
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+settings[breadcrumbs]  = 1
+settings[social_links]  = 1
+settings[twitter_username] = "shanidkv"
+settings[facebook_username] = "shanidkv"
+; Information added by Drupal.org packaging script on 2014-02-22
+version = "7.x-1.0"
+core = "7.x"
+project = "creative-responsive-theme"
+datestamp = "1393064010"
+
