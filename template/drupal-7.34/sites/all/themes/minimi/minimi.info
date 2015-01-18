@@ -1,0 +1,15 @@
+name        = minimi
+description = 'petit, petit, petit'
+core        = 7.x
+
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/style.css
+
+scripts[] = minimi.js
+
+regions[header] = Header
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[footer] = Footer

@@ -1,0 +1,12 @@
+name = minimi
+description = Description de votre thème
+core = 7.x
+engine = phptemplate
+ regions[header] = Header
+ regions[help] = Help
+ regions[content] = Content
+ regions[sidebar_first] = Left sidebar
+ regions[footer] = Footer
+
+ stylesheets[all][] = normalize.css
+ scripts[] = minimi.js

@@ -1,0 +1,24 @@
+name = Scratch
+description =StephaneMartinW scratch template.
+core = 7.x
+
+stylesheets[all][] = css/style.css
+
+regions[main_menu] = Main Menu
+regions[page_top] = Page Top
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[footer] = Footer
+regions[page_bottom] = Page Bottom
+
+# Ajout de fichiers CSS
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/foundation.css
+
+# Add javascript files
+styles[] = js/modernizr.js 
+
+# Add CSS files
+stylesheets[all][] = css/style.css

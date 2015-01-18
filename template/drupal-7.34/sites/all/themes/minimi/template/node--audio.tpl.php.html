@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Fichier minimi.info" />
+	<title>minimi.info</title>
+</head>
+<body>
+<pre>
+<code>&lt;article&gt;
+  &lt;header&gt;
+    &lt;?php print render($title_prefix); ?&gt;
+     &lt;?php if (!$page): ?&gt;
+      &lt;h2&lt;?php print $title_attributes; ?&gt;&gt;&lt;a href="&lt;?php print $node_url; ?&gt;"&gt;&lt;?php print $title; ?&gt;&lt;/a&gt;&lt;/h2&gt;
+    &lt;?php endif; ?&gt;
+    &lt;?php print render($title_suffix); ?&gt;
+  &lt;/header&gt;
+    &lt;?php
+    // locate file and make available to page
+      // get the file location
+      $uri = ($content['field_audio']['#items'][0]['uri']);
+      // transform uri (public://file_name.mp3) into url (http://example.com/files/default/file_name.mp3)
+      $url = file_create_url($uri);
+      // get the file name (for fallback in audio tag)
+      $file_name = ($content['field_audio']['#items'][0]['filename']);
+    ?&gt;
+
+  &lt;?php 
+  // print only body of node as field_audio must be enclosed in audio tag
+    print render($content['body']);
+  ?&gt;
+  &lt;audio controls&gt;
+    &lt;source src="&lt;?php print $url; ?&gt;" type='audio/mpeg; codecs="mp3"'&gt;
+    &lt;!-- Fallback for old browsers --&gt;
+    &lt;a href="&lt;?php print $url; ?&gt;"&gt;&lt;?php print $file_name; ?&gt;&lt;/a&gt;
+  &lt;/audio&gt;
+&lt;/article&gt;
+</code>
+</pre>
+</body>
+</html>

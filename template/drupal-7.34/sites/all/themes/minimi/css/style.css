@@ -1,0 +1,72 @@
+/*
+*/
+body {
+	color: #000;
+	background: #fff;
+	width: 320px;
+}
+#logo>img {
+  display: none; /* changer à "block" pour >320px */
+  margin: 0 auto;
+}
+#site-name{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#site-name>a{
+	font-size: 25px;
+	color: #000;
+	text-decoration: none;
+}
+#site-slogan {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 2px 0;
+	padding: 0;
+}
+header.branding {
+  width: 100%;
+  background: #ddd;
+}
+.user-picture {
+	width: 100px;
+	float: left;
+}
+.submitted {
+	width: 210px;
+	height: 80px;
+	margin: 0 5px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	float: left;
+}
+ul.links {
+	display: block;
+	margin: 2px 0;
+}
+ul.links li{
+	display: block
+}
+article {
+	padding-bottom: 2px;
+	margin-bottom: 5px;
+	border-bottom: solid 1px #000;
+}
+article>header {
+	width: 100%;
+	background: #dfd;
+	overflow: hidden;
+}
+article .content img {
+	max-width: 155px;
+	margin-right: 5px;
+	float: left;
+}
+.comment footer {
+	width: 100%;
+	overflow: hidden;
+}
